@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Aleksa Radovanović</h1>
+        <ul>
+          <li><a href="#git">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/aradovanovic03/">LinkedIn</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="about-box">
+      <h2>O meni</h2>
+      <p>Možda zvuči kao kliše, ali zaista volim da se usavršavam i stalno učim nove stvari.
+        Verujem da je stalno usavršavanje ključ uspeha u brzo menjajućem svetu tehnologije.
+        Cilj mi je da kroz svaki projekat doprinesem nečemu korisnom i da pritom naučim nešto novo.
+        Pored tehničkih znanja, važno mi je i da razvijem sposobnosti timskog rada, komunikacije i rešavanja problema,
+        jer smatram da su to ključni faktori za uspeh u svakom profesionalnom okruženju. Takođe, trudim se da ostanem motivisan i otvoren za nove ideje,
+        jer verujem da kreativnost i prilagodljivost čine razliku u svakom poslu. Svaki izazov doživljavam kao priliku za rast i unapređenje</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Veštine</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>SQL</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projekti</h2>
+    <div class="project">
+      <h3>Service Booking System – Web aplikacija</h3>
+      <h4>Spring Boot, Angular, MySQL</h4>
+      <p>Razvijena jednostavna veb aplikacija za zakazivanje usluga, gde korisnici mogu da zakažu termine putem obrasca. 
+        Backend je napravljen korišćenjem Spring Boot-a i REST API-ja, dok je frontend urađen u Angular-u. 
+        Podaci su čuvani i upravljani u MySQL bazi podataka. 
+        Fokus je bio na razvoju osnovnih funkcionalnosti kao što su validacija obrasca, 
+        upravljanje terminima i responzivan korisnički interfejs.</p>
+        <a href="https://github.com/Aletokul/ServiceBookingSystem" target="_blank" class="repo">GitHub repo</a>
+    </div>
+    <div class="project">
+      <h3>Jednostavan portfolio sajt</h3>
+      <p>Jednostavan portfolio sajt koji sam napravio da predstavim svoje osnovne veštine i projekte. 
+        Nije komplikovan, ali lepo funkcioniše i sadrži osnovne animacije koje doprinose boljem izgledu. 
+        Napravljen korišćenjem osnovnih web tehnologija – HTML, CSS i JavaScript.</p>
+        <a href="https://github.com/Aletokul/ServiceBookingSystem" target="_blank" class="repo">GitHub repo</a>
+    </div>
+    <div class="project">
+      <h3>Sistem za rezervaciju bioskopskih karata (studentski projekat)</h3>
+      <p>Konzolna aplikacija za rezervaciju bioskopskih karata razvijena korišćenjem Pythona i principa objektno-orijentisanog programiranja. 
+        Projekat obuhvata module za upravljanje filmovima, projekcijama i prodajom karata, 
+        kao i funkcionalnosti za čitanje i upis podataka u tekstualne fajlove.
+        Sistem verno simulira rad bioskopa, omogućavajući rezervaciju sedišta i praćenje prodatih karata.</p>
+        <a href="https://github.com/Aletokul/ServiceBookingSystem" target="_blank" class="repo">GitHub repo</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="contact">Kontakt</h2>
+    <form id="contactForm" action="https://formspree.io/f/xwpogoly" method="POST">
+      <input type="text" name="name" placeholder="Vaše ime" required />
+      <input type="email" name="email" placeholder="Vaš email" required />
+      <textarea name="message" placeholder="Poruka" required></textarea>
+      <button type="submit" class="btnsbmit">Pošalji</button>
+    </form>
+    <p id="successMessage" class="hidden">Poruka uspešno poslata!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aleksa Radovanović</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
